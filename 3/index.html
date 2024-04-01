@@ -2,12 +2,24 @@
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-git.js"></script>
-    <script> //Your Code Here </script>
+    <script>
+        $(document).ready(() => {
+            $('#buttonName').click(() => {
+                $("input").addClass('large')
+            })
+        })
+    </script>
+    <style>
+        .large {
+            font-size: 20px;
+        }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>How to get the value of a textbox using jQuery</title>    
 </head>
 <body>
-    <input type="text" value="Input text here">
+    <input type="text" value="jQuery in action">
+    <input id="buttonName" type="button" value="Large" />
 </body>
 </html>
